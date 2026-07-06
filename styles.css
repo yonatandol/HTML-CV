@@ -1,0 +1,308 @@
+/* ==========================================================================
+   CSS Variables & Base Styles
+   ========================================================================== */
+:root {
+    --bg-color: #F4F4F9;
+    --text-color: #2c3e50; /* Softer, serious but not harsh dark blue/grey */
+    --text-light: #555555;
+    --accent-primary: #ff6f69; /* Fun, warm coral/watermelon */
+    --accent-secondary: #ffcc5c; /* Sunny laid-back yellow */
+    --accent-green: #88d8b0; /* Fresh mint green */
+    --white: rgba(255, 255, 255, 0.9); /* Slightly transparent white for a relaxed feel */
+    --border-radius: 16px; /* Rounder, friendlier corners */
+    --box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #a8e6cf 0%, #dcedc1 100%); /* Laid back green/lime gradient */
+    background-attachment: fixed;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--accent-secondary);
+}
+
+/* Sleek gradient dividers */
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary), var(--accent-green));
+    margin: 2.5rem auto;
+    border-radius: 5px;
+    width: 70%;
+}
+
+/* ==========================================================================
+   Layout & Container
+   ========================================================================== */
+.resume-body, body > h1, body > ul, body > p, body > a, body > footer {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+}
+
+/* If the body is not wrapped in resume-body (like in hobbies.html), style the body contents directly */
+body:not(.resume-body) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+body:not(.resume-body) > * {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+body:not(.resume-body) > hr {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Header (index.html) */
+.header-section {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.name-title {
+    font-size: 3rem;
+    color: var(--accent-primary);
+    margin-bottom: 0.5rem;
+}
+
+.header-section img {
+    border-radius: 50%;
+    border: 4px solid var(--accent-green);
+    transition: var(--transition);
+    object-fit: cover;
+    margin-top: 1rem;
+}
+
+.header-section img:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 15px rgba(255, 111, 105, 0.4);
+}
+
+/* Sections */
+.resume-section {
+    margin-bottom: 2rem;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed var(--accent-green);
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+/* Experience Blocks */
+.experience-block {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    border-left: 5px solid var(--accent-primary);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    transition: var(--transition);
+}
+
+.experience-block:hover {
+    box-shadow: var(--box-shadow);
+    transform: translateX(5px);
+    border-left-color: var(--accent-green);
+}
+
+.experience-block h3 {
+    margin-top: 0;
+    color: var(--text-color);
+}
+
+.experience-block .date {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.experience-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.experience-img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+/* ==========================================================================
+   Hobbies Gallery (Grid Layout)
+   ========================================================================== */
+.gallery-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+    align-items: center; /* Center the cards if they aren't full width */
+}
+
+.hobby-card {
+    width: 100%;
+    max-width: 800px; /* Keep them from getting too wide on large screens */
+    background: var(--bg-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: var(--transition);
+    border-bottom: 4px solid var(--accent-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+.hobby-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-green);
+}
+
+.hobby-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.hobby-card:hover .hobby-img {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.hobby-card h3 {
+    padding: 1rem 1rem 0;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.hobby-card p {
+    padding: 0 1rem 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-light);
+    flex-grow: 1;
+}
+
+/* ==========================================================================
+   Lists & Misc
+   ========================================================================== */
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* ==========================================================================
+   Slideshow Gallery (CSS Scroll Snap)
+   ========================================================================== */
+.slideshow-container {
+    display: flex;
+    overflow-x: hidden; /* Disables manual sliding */
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    scroll-behavior: smooth; /* Make JS scrolling smooth natively */
+}
+
+.slideshow-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.slideshow-container::-webkit-scrollbar-track {
+    background: var(--bg-color);
+    border-radius: 4px;
+}
+
+.slideshow-container::-webkit-scrollbar-thumb {
+    background-color: var(--accent-primary);
+    border-radius: 4px;
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* Shows the full image without zooming or cropping */
+    border-radius: var(--border-radius);
+}
+
+.slide-caption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-light);
+}
+
+/* ==========================================================================
+   Responsive Design (Media Queries)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .resume-body, body:not(.resume-body) > * {
+        margin: 1rem;
+        padding: 1.5rem;
+        width: auto;
+    }
+    
+    .name-title {
+        font-size: 2.2rem;
+    }
+
+    .gallery-section {
+        grid-template-columns: 1fr;
+    }
+}

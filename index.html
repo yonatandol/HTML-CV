@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <title>Yonatan Dolman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1> Yonatan Dolman</h1>
+<body class="resume-body">
+    <header id="main-header" class="header-section">
+        <h1 class="name-title"> Yonatan Dolman</h1>
     <img src="images/myphoto.jpg" alt="Profile Picture" height="150">
     <p>
         <strong>Consultative Sales Professional & Industrial Engineering Student</strong>
@@ -15,33 +20,56 @@
         <li><strong>Strategic Mindset:</strong> Combining direct sales experience with IE principles to optimize business operations.</li>
         <li><strong>Goal-Oriented:</strong> Focused on identifying client needs and driving organizational revenue at scale.</li>
     </ul>
+    </header>
     <hr>
 
-    <h2> Education</h2>
+    <section id="education" class="resume-section">
+        <h2> Education</h2>
     <ul>
         <li> Pre Engineering, Ben Ben-Gurion University (2022-2023)</li>
         <li> B.sc in Industrial Engineering, Ben-Gurion University (2023 - 2027)</li>
     </ul>
+    </section>
     <hr>
 
-    <h2> Work experience</h2>
-    <h3> Account Executive -Tradenet, Tel-Aviv</h3>
-    <p> 7/2019 - 11/2021</p>
-    <ul>
-        <li><strong>Sales & Lead Nurturing:</strong> Managed high-value sales cycles, converting leads into funded traders through strategic needs assessment.</li>
-        <li><strong>Product Education:</strong> Acted as a Subject Matter Expert on complex financial leverage and profit-sharing models.</li>
-        <li><strong>Relationship Management:</strong> Provided personalized onboarding and bridged the gap between technical tools and client success.</li>
-    </ul>
+    <section id="experience" class="resume-section">
+        <h2> Work experience</h2>
+        
+    <div class="experience-block">
+        <h3>Account Executive - Tradenet</h3>
+        <p class="date">July 2019 - November 2021</p>
+        <ul>
+            <li><strong>Sales & Lead Nurturing:</strong> Managed high-value sales cycles, converting leads into funded traders through strategic needs assessment.</li>
+            <li><strong>Product Education:</strong> Acted as a Subject Matter Expert on complex financial leverage and profit-sharing models.</li>
+            <li><strong>Relationship Management:</strong> Provided personalized onboarding and bridged the gap between technical tools and client success.</li>
+        </ul>
+    </div>
 
-    <h3>Sales Specialist - Med Balance, Tel-Aviv</h3>
-    <p>Feb 2023 - Oct 2023</p>
-    <ul>
-        <li><strong>Consultative Health Sales:</strong> Conducted high-level needs assessments for clients with chronic metabolic issues (Diabetes, Obesity, Hypertension).</li>
-        <li><strong>Customized Solutions:</strong> Educated prospective clients on non-pharmacological, personalized health protocols designed to address root causes rather than just symptoms.</li>
-        <li><strong>Value Translation:</strong> Explained complex physiological concepts and treatment plans to convert leads into committed program participants.</li>
-    </ul>
+    <div class="experience-block">
+        <h3>Sales Specialist - Med Balance</h3>
+        <p class="date">February 2023 - October 2023</p>
+        <ul>
+            <li><strong>Consultative Health Sales:</strong> Conducted high-level needs assessments for clients with chronic metabolic issues (Diabetes, Obesity, Hypertension).</li>
+            <li><strong>Customized Solutions:</strong> Educated prospective clients on non-pharmacological, personalized health protocols designed to address root causes rather than just symptoms.</li>
+            <li><strong>Value Translation:</strong> Explained complex physiological concepts and treatment plans to convert leads into committed program participants.</li>
+        </ul>
+    </div>
+
+    <div class="experience-block">
+        <h3>Gardener</h3>
+        <p class="date">April 2025 - March 2026</p>
+        <ul>
+            <li><strong>Residential Landscaping:</strong> Maintained and pampered homes in a residential area, performing diverse groundskeeping tasks.</li>
+            <li><strong>Irrigation Maintenance:</strong> Diagnosed and fixed piping issues related to sprinkler systems to ensure optimal plant health.</li>
+            <li><strong>Equipment Operation:</strong> Operated various power tools including bushwhackers (brushcutters) and mowers for comprehensive property upkeep.</li>
+        </ul>
+        <img src="images/placeholder.jpg" alt="Gardening" class="experience-img">
+    </div>
+    </section>
     <hr>
-<h2>Skills</h2>
+    
+    <section id="skills" class="resume-section">
+        <h2>Skills</h2>
 
 <h3>Core Competencies</h3>
 <ul>
@@ -69,13 +97,16 @@
     <li>English (Native)</li>
     <li> Spanish (Conversational)</li>
 </ul>
+    </section>
 
 <hr>
-    <h3>More About Me</h3>
+    <section id="about" class="resume-section">
+        <h3>More About Me</h3>
     <ul>
         <li><a href="hobbies.html">My Hobbies</a></li>
         <li><a href="contact.html">Contact Me</a></li>
     </ul>
+    </section>
 
     <footer>
         <p>Yonatan Dolman &copy; 2026</p>

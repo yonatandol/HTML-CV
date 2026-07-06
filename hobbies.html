@@ -1,20 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>My Hobbies</title>
+    <title>Yonatan Dolman - Hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h1>My Hobbies</h1>
-    
-    <ul>
-        <li>Gym and swimming</li>
-        <li>Cooking</li>
-        <li>Video games</li>
-        <li> Traveling</li>
-    </ul>
+
+    <section id="hobbies-gallery" class="gallery-section">
+        <div class="hobby-card">
+            <h3 style="padding-top: 1.5rem;">Working Out</h3>
+            <p>Working out is an integral part of my life and something I will never skip. I enjoy going to the gym for
+                heavy lifts like squatting and deadlifting, and I also swim! </p>
+        </div>
+        <div class="hobby-card" style="border: 2px solid var(--accent-primary);">
+            <h3 style="padding-top: 1.5rem;">Video Games</h3>
+            <p>I grew up playing video games, and they remain something I am incredibly passionate about. Here is my
+                definitive, official Top 10 list:</p>
+
+            <div
+                style="background: rgba(255, 255, 255, 0.7); border-radius: 12px; padding: 1.5rem; margin: 0 1.5rem 1.5rem 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <h4
+                    style="margin-top: 0; color: var(--accent-primary); text-align: center; border-bottom: 2px dashed var(--accent-green); padding-bottom: 0.5rem; font-size: 1.2rem;">
+                    🏆 The Official Top 10 🏆</h4>
+                <ol
+                    style="padding-left: 1.5rem; padding-right: 1rem; margin-top: 1rem; padding-bottom: 0; color: var(--text-color); font-size: 1.05rem; margin-bottom: 0; font-weight: 500; line-height: 1.8;">
+                    <li>Fallout: New Vegas</li>
+                    <li>Borderlands 2</li>
+                    <li>The Witcher 3: Wild Hunt</li>
+                    <li>Cyberpunk 2077</li>
+                    <li>Dark Souls 3</li>
+                    <li>Red Dead Redemption 2</li>
+                    <li>Subnautica</li>
+                    <li>The Legend of Zelda: Breath of the Wild</li>
+                    <li>Elden Ring</li>
+                    <li>Super Mario Odyssey</li>
+                </ol>
+            </div>
+
+            <h4 style="padding: 0 1.5rem; margin-bottom: 0.25rem; color: var(--accent-primary);">Online Multiplayer</h4>
+            <p style="padding-top: 0; padding-bottom: 1.5rem;">Check me out also on Overwatch, League of Legends, and
+                Super Smash Bros!</p>
+        </div>
+        <div class="hobby-card">
+            <h3 style="padding-top: 1.5rem; padding-left: 1.5rem;">Cooking</h3>
+            <p style="padding-left: 1.5rem; padding-right: 1.5rem;">I love optimizing my meals to make it healthy as
+                possible, while trying to make it tasty too! Check out
+                some of my meals.</p>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="Images/Images - Meals/1000028332.jpg" alt="Cooking 1">
+                    <p class="slide-caption">Yummers</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Meals/1000039131.jpg" alt="Cooking 2">
+                    <p class="slide-caption">My take on Butter chicken! or what is my moms I forgot 🤔 </p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Meals/1000054007.jpg" alt="Cooking 3">
+                    <p class="slide-caption">Homemade Pizza!</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Meals/1000115840.jpg" alt="Cooking 4">
+                    <p class="slide-caption">3 Burritos? 🫣</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Meals/1000139478.jpg" alt="Cooking 5">
+                    <p class="slide-caption">Nothing too special, but tasty</p>
+                </div>
+            </div>
+        </div>
+        <div class="hobby-card">
+            <h3 style="padding-top: 1.5rem; padding-left: 1.5rem;">Traveling</h3>
+            <p style="padding-left: 1.5rem; padding-right: 1.5rem;">Yeah Yeah, who doesn't like traveling..</p>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000000920.jpg" alt="Travel 1">
+                    <p class="slide-caption">Oh oh.. what's he grabbing there? 👀 </p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000000923.jpg" alt="Travel 3">
+                    <p class="slide-caption">Was absoloutly terrified here, not gonna lie</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000000936.jpg" alt="Travel 4">
+                    <p class="slide-caption">Couldn't not put this here</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000000947.jpg" alt="Travel 5">
+                    <p class="slide-caption"> Very cool, I know.. </p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000001397.jpg" alt="Travel 6">
+                    <p class="slide-caption">Looking down on the favela</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Travel/1000038941.jpg" alt="Travel 7">
+                    <p class="slide-caption">Not sure where this is..</p>
+                </div>
+            </div>
+        </div>
+        <div class="hobby-card">
+            <h3 style="padding-top: 1.5rem; padding-left: 1.5rem;">Cats</h3>
+            <p style="padding-left: 1.5rem; padding-right: 1.5rem; padding-bottom: 0.5rem;"> I'm a simple man: I see a
+                cat, I try to pet it. Sometimes it works, sometimes it doesn't. Check out
+                my cat repetoire!</p>
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000007302.jpg" alt="Cat 1">
+                    <p class="slide-caption">Cat I saved from the street, didnt make it though.. RIP 💔🪦</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000022520.jpg" alt="Cat 2">
+                    <p class="slide-caption">Slav squat with some gatitos!</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000022636.jpg" alt="Cat 3">
+                    <p class="slide-caption">Cat invaded my hotel room!</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000040110.jpg" alt="Cat 4">
+                    <p class="slide-caption"> Joined me at the bar</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000061065.jpg" alt="Cat 5">
+                    <p class="slide-caption">Cat under my house, see her a lot!</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000073141.jpg" alt="Cat 6">
+                    <p class="slide-caption"> Apologizes for interefering your slumber</p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000085144.jpg" alt="Cat 7">
+                    <p class="slide-caption">This is Rathique, my favourite street cat </p>
+                </div>
+                <div class="slide">
+                    <img src="Images/Images - Cats/1000121236.jpg" alt="Cat 8">
+                    <p class="slide-caption"> Cat from Uni</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <hr>
     <a href="index.html">Back to Home</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const containers = document.querySelectorAll('.slideshow-container');
+            containers.forEach(container => {
+                // Auto-slide every 6 seconds
+                setInterval(() => {
+                    const maxScrollLeft = container.scrollWidth - container.clientWidth;
+                    // If we are at the end, scroll back to 0, otherwise scroll by the width of one slide
+                    if (container.scrollLeft >= maxScrollLeft - 10) {
+                        // For a smoother loop, scroll back
+                        container.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        container.scrollBy({ left: container.clientWidth, behavior: 'smooth' });
+                    }
+                }, 6000); // 6 seconds
+            });
+        });
+    </script>
 </body>
+
 </html>
