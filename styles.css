@@ -292,10 +292,16 @@ footer {
    Responsive Design (Media Queries)
    ========================================================================== */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .resume-body, body:not(.resume-body) > * {
-        margin: 1rem;
+        margin: 1rem auto;
         padding: 1.5rem;
-        width: auto;
+        width: calc(100% - 2rem);
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .name-title {
